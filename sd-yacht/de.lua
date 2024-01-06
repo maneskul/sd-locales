@@ -1,0 +1,91 @@
+local Translations = {
+    error = {
+        ["cannot_use_kit_here"]            = "Sie können dieses Kit hier nicht verwenden..",
+        ["pressure_control_needed"]        = "Sie müssen den Druck reduzieren, sonst wird alles explodieren!",
+        ["hack_areas_info"]                = "Sobald der Druck unter Kontrolle ist, müssen Sie bestimmte Bereiche hacken..",
+        ["system_already_hacked"]          = "Dieses System wurde bereits gehackt..",
+        ["security_system_active"]         = "Das Sicherheitssystem ist noch aktiv..",
+        ["exploit_attempt"]                = "Oh, versuchen wir zu manipulieren?!",
+        ["vault_door_locked"]              = "Die Tresortür ist verschlossen",
+        ["full_lockdown"]                  = "Das Sicherheitssystem ist vollständig gesperrt..",
+        ["missing_something"]              = "Ihnen fehlt etwas",
+        ["cannot_hack_now"]                = "Sie können dies jetzt nicht hacken..",
+        ["regulate_pressure"]              = "Besser, wenn jemand den Druck auf moderate Werte reguliert..",
+        ["not_close_enough"]               = "Sie sind nicht nah genug dran",
+        ["yacht_engine_explode"]           = "Der Motor der Yacht steht kurz vor der Explosion!",
+        ["yacht_rapid_run"]                = "Der Druck der Yacht steigt rapide an.",
+        ["yacht_press_too_low"]            = "Der Druck der Yacht ist zu niedrig.",
+        ["yacht_run"]                      = "Die Yacht wurde zerstört.",
+        ["yacht_press_no_higher"]          = "Der Druck der Yacht kann nicht weiter steigen.",
+        ["yacht_system_locked"]            = "Sie haben das Passwort bereits eingegeben.",
+        ["yacht_fully_locked"]             = "Die Yacht ist vollständig gesperrt.",
+        ["yacht_incorrect_password"]       = "Falsches Passwort.",
+        ["yacht_button_already_pushed"]    = "Dieser Knopf wurde bereits gedrückt.",
+        ["yacht_already_input_codes"]      = "Codes für die Yacht wurden bereits eingegeben.",
+        ["yacht_not_enough_police"]        = "Nicht genug Polizei..",
+        ["yacht_already_have_safe"]        = "Sie haben bereits einen Safe.",
+        ["yacht_exploit"]                  = "Versuchen Sie zu manipulieren?!",
+        ["unexpected_location"]            = "Ups, wie sind Sie hierher gekommen?!",
+        ["incorrect_codes"]                = "Falsche Codes..",
+        ["cannot_do_now"]                  = "Das geht jetzt nicht..",
+        ["auto_pressure_active"]           = "Automatische Druckregelung ist noch aktiv..",
+        ["the_hack_incorrect"]             = "Die Reihenfolge, in der Sie gehackt haben, ist falsch, versuchen Sie es erneut.",
+        ["yacht_seized"]                   = "Der Druck der Yacht fiel auf unter 0. Das Schiff hat gestoppt."
+    },
+    success = {
+        ["deactivated_pressure_regulators"]= "Automatische Druckregler deaktiviert..",
+        ["setup_screen_k"]                 = "Einrichtungsbildschirm #",
+        ["screen_revealed"]                = "Ein Buchstabe des Passworts wurde auf einem Bildschirm angezeigt.",
+        ["generic_success"]                = "Erfolg",
+        ["yacht_safe_taken"]               = "Der Safe der Yacht wurde genommen.",
+        ["security_system_override"]       = "Sicherheitssystem-Übersteuerung gestartet..",
+        ["find_button"]                    = "Sie müssen den Knopf finden, um die Dinge in Gang zu bringen...",
+        ["yacht_go_to_bridge"]             = "Gehen Sie zur Brücke, um die drei Konsolen zu hacken.",
+        ["vault_unlocked"]                 = "Sie haben das richtige Passwort eingegeben, Tresor entsperrt."
+    },
+    menu = {
+        ["yacht_current_pressure"]         = "Aktueller Druck der Yacht",
+        ["yacht_casino_code_text"]         = "Casino-Code-Information:",
+        ["first_half_casino_codes"]        = "Erste Hälfte der Casino-Codes: ",
+        ["first_half_yacht_codes"]         = "Erste Hälfte der Yacht-Codes:",
+        ["yacht_enter_codes"]              = "Geben Sie die erforderlichen Codes ein",
+        ["yacht_enter_yacht_codes"]        = "Yacht-Codes eingeben",
+        ["yacht_include_all"]              = "Alle Zeichen einbeziehen",
+        ["submit"]                         = "Einreichen",
+    },
+    prints = {
+        ["yacht_cooldown_finished"]        = "YACHT: Abkühlphase beendet",
+        ["yacht_cooldown_started"]         = "YACHT: Abkühlphase gestartet"
+    },
+    target = {
+        ["grab"]                          = "Greifen",
+        ["loot"]                          = "Plündern",
+        ["enter_codes"]                   = "Codes eingeben",
+        ["insert_usb"]                    = "USB einstecken",
+        ["check_pressure"]                = "Druck prüfen",
+        ["lower_pressure"]                = "Druck verringern",
+        ["increase_pressure"]             = "Druck erhöhen",
+        ["press_button"]                  = "Knopf drücken",
+        ["view_contents"]                 = "Inhalt ansehen",
+        ["open_briefcase"]                = "Aktenkoffer öffnen",
+        ["exit_vault"]                    = "Tresor verlassen",
+        ["enter_vault"]                   = "Tresor betreten",
+        ["access_terminal"]               = "Terminalzugriff",
+        ["setup_3"]                       = "Einrichtung *3",
+        ["setup_2"]                       = "Einrichtung *2",
+        ["setup_1"]                       = "Einrichtung *1",
+        ["search"]                        = "Suchen"
+    },
+    progress = {
+        ["reviving"]                       = "Wiederbelebung..",
+        ["cabin_search"]               = "Suche..",
+        ["lower_pressure_turn_valve"]      = "Ventil drehen..",
+        ["yacht_turn_valve"]               = "Das Ventil drehen",
+        ["pick_up_safe"]                   = "Safe aufheben.."
+    },
+}
+
+Lang = Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})

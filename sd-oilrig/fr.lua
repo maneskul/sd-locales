@@ -1,0 +1,75 @@
+local Translations = {
+    error = {
+        ["cannot_use_kit_here"]            = "Vous ne pouvez pas utiliser ce kit ici.",
+        ["already_hacked"]                 = "Ce système a déjà été piraté.",
+        ["still_active"]                   = "Le système de sécurité est toujours actif.",
+        ["fully_lockdown"]                 = "Le système de sécurité est complètement verrouillé.",
+        ["automatic_pressure_active"]      = "Les régulateurs de pression automatiques sont actifs.",
+        ["automatic_pressure_active2"]     = "La régulation automatique de la pression est toujours active.",
+        ["pressure_too_low"]               = "La pression est trop basse et a bloqué l'équipement.",
+        ["incorrect_pass"]                 = "Mot de passe incorrect.",
+        ["how_did_you_get"]                = "Oops, comment êtes-vous arrivé ici ?!",
+        ["not_enough_cops"]                = "Pas assez de policiers.",
+        ["already_have_barrel"]            = "Vous avez déjà un baril.",
+        ["trying_to_exploit"]              = "Vous essayez d'exploiter quelque chose, hein ?!",
+        ["pressure_too_high"]              = "La pression est trop élevée ! Fuyez !",
+        ["cannot_hack_right_now"]          = "Vous ne pouvez pas pirater cela en ce moment.",
+        ["pressure_not_right_yet"]         = "La pression n'est pas encore correcte.",
+        ["no_pink_usb_dongle"]             = "Vous n'avez pas de dongle USB rose.",
+        ["cant_do_right_now"]              = "Vous ne pouvez pas faire cela pour le moment.",
+        ["wrong_lever_sequence"] = "Vous avez tiré les leviers dans le mauvais ordre..",
+    },
+    success = {
+        ["out_to_sea"]                     = "Vous avez navigué loin en mer.",
+        ["pressure_at"]                    = "Vous avez besoin d'une pression d'environ 55%.",
+        ["pressure_at_2"]                  = "Une fois que la pression est correcte, vous devez pirater certaines zones.",
+        ["automatic_pressure_deactive"]    = "Régulateurs de pression automatiques désactivés.",
+        ["took_barrel"]                    = "Vous avez pris le baril rempli de pétrole.",
+        ["pulled_lever"]                      = "Vous avez tiré sur le levier",
+        ["current_pressure"]               = "La pression actuelle est de :",
+        ["security_system_override"]       = "La substitution du système de sécurité a commencé.",
+        ["find_levers_to_deactivate_pressure"] = "Vous devez trouver des leviers pour désactiver les régulateurs de pression.",
+    },
+    letters = {
+        ["hidden_letter"] = "La lettre cachée est",
+        ["first_hidden_letter"] = "La première lettre cachée est",
+        ["second_hidden_letter"] = "La deuxième lettre cachée est",
+        ["third_hidden_letter"] = "La troisième lettre cachée est",
+        ["fourth_hidden_letter"] = "La quatrième lettre cachée est",
+    },
+    menu = {
+        ["input_password"]                 = "Entrez un mot de passe de 4 lettres:",
+        ["submit_Text"]                    = "Soumettre",
+        ["uppercase_only"]                 = "Uniquement en majuscules",
+        ["sell_barrel"]                    = "Vendre le baril de pétrole à cette station-service",
+        ["going_price"]                    = "Prix actuel ici:"
+    },
+    prints = {
+        ["cooldown_started"] = "PLATEFORME PÉTROLIÈRE: Délai de récupération démarré",
+        ["cooldown_finished"] = "PLATEFORME PÉTROLIÈRE: Délai de récupération terminé",
+    },
+    target = {
+        ["grab_barrel"]                    = "Prendre le baril",
+        ["sell_barrel"]                    = "Vendre le baril de pétrole",
+        ["pull_lever_1"]                   = "Tirer le levier #1",
+        ["pull_lever_2"]                   = "Tirer le levier #2",
+        ["pull_lever_3"]                   = "Tirer le levier #3",
+        ["insert_dongle"]                  = "Insérer le dongle USB",
+        ["increase_pressure"]              = "Augmenter la pression",
+        ["lower_pressure"]                 = "Diminuer la pression",
+        ["check_pressure"]                 = "Vérifier la pression",
+        ["enter_password"]                 = "Entrer le mot de passe",
+        ["loot_body"]                      = "Fouiller",
+    },
+    progress = {
+        ["reviving"]                       = "Réanimation en cours...",
+        ["selling"]                        = "Vente en cours...",
+        ["turning_valve"]                  = "Tourner la valve...",
+        ["pickup_barrel"]                  = "Ramassage du baril en cours...",
+    },
+}
+
+Lang = Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})

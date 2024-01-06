@@ -1,0 +1,76 @@
+local Translations = {
+    error = {
+        ["cannot_use_kit_here"]            = "لا يمكنك استخدام هذه الحقيبة هنا.",
+        ["already_hacked"]                 = "تم اختراق هذا النظام بالفعل.",
+        ["still_active"]                   = "نظام الأمان لا يزال نشطًا.",
+        ["fully_lockdown"]                 = "نظام الأمان مقفل بالكامل.",
+        ["automatic_pressure_active"]      = "منظمات الضغط التلقائية نشطة.",
+        ["automatic_pressure_active2"]     = "منظم الضغط التلقائي لا يزال نشطًا.",
+        ["pressure_too_low"]               = "الضغط انخفض كثيرًا وتسبب في تجميد الجهاز.",
+        ["incorrect_pass"]                 = "كلمة مرور غير صحيحة.",
+        ["how_did_you_get"]                = "عفوًا، كيف وصلت إلى هنا؟!",
+        ["not_enough_cops"]                = "لا يوجد عدد كافٍ من رجال الشرطة.",
+        ["already_have_barrel"]            = "لديك بالفعل برميل.",
+        ["trying_to_exploit"]              = "هل تحاول استغلال ثغرة ما؟!",
+        ["pressure_too_high"]              = "الضغط ارتفع كثيرًا! اهرب!",
+        ["cannot_hack_right_now"]          = "لا يمكنك اختراق هذا الآن.",
+        ["pressure_not_right_yet"]         = "الضغط ليس مناسبًا بعد.",
+        ["no_pink_usb_dongle"]             = "ليس لديك دونغل USB باللون الوردي.",
+        ["cant_do_right_now"]              = "لا يمكنك القيام بذلك الآن.",
+        ["wrong_lever_sequence"]           = "لقد قمت بسحب الأذرع بترتيب خاطئ..",
+    }, 
+    success = {
+        ["out_to_sea"]                     = "لقد ابتعدت بعيدًا في البحر.",
+        ["pressure_at"]                    = "تحتاج الضغط إلى حوالي 55%.",
+        ["pressure_at_2"]                  = "عندما يكون الضغط مناسبًا، يجب أن تقوم بتخريب بعض المناطق.",
+        ["automatic_pressure_deactive"]    = "تم إيقاف منظمات الضغط التلقائية.",
+        ["took_barrel"]                    = "لقد أخذت البرميل الممتلئ بالنفط.",
+        ["pulled_lever"]                      = "لقد سحبت الرافعة",
+        ["current_pressure"]               = "الضغط الحالي هو:",
+        ["security_system_override"]       = "تم بدء تجاوز نظام الأمان.",
+        ["find_levers_to_deactivate_pressure"] = "يجب عليك العثور على الرافعات لتعطيل منظمات الضغط.",
+    },
+    letters = {
+        ["hidden_letter"] = "الحرف المخفي هو",
+        ["first_hidden_letter"] = "الحرف المخفي الأول هو",
+        ["second_hidden_letter"] = "الحرف المخفي الثاني هو",
+        ["third_hidden_letter"] = "الحرف المخفي الثالث هو",
+        ["fourth_hidden_letter"] = "الحرف المخفي الرابع هو",
+    },
+    menu = {
+        ["input_password"]                 = "أدخل كلمة مرور من 4 أحرف:",
+        ["submit_Text"]                    = "إرسال",
+        ["uppercase_only"]                 = "أحرف كبيرة فقط",
+        ["sell_barrel"]                    = "بيع برميل النفط إلى محطة الوقود هذه",
+        ["going_price"]                    = "السعر الحالي هنا:",
+    
+    },
+    prints = {
+        ["cooldown_started"] = "الحقل النفطي: بدء فترة التهدئة",
+        ["cooldown_finished"] = "الحقل النفطي: انتهت فترة التهدئة",
+    },
+    target = {
+        ["grab_barrel"]                    = "التقاط البرميل",
+        ["sell_barrel"]                    = "بيع برميل النفط",
+        ["pull_lever_1"]                   = "سحب رافعة رقم 1",
+        ["pull_lever_2"]                   = "سحب رافعة رقم 2",
+        ["pull_lever_3"]                   = "سحب رافعة رقم 3",
+        ["insert_dongle"]                  = "إدخال دونغل USB",
+        ["increase_pressure"]              = "زيادة الضغط",
+        ["lower_pressure"]                 = "تقليل الضغط",
+        ["check_pressure"]                 = "فحص الضغط",
+        ["enter_password"]                 = "إدخال كلمة المرور",
+        ["loot_body"]                      = "تفتيش",
+    },
+    progress = {
+        ["reviving"]                       = "جارٍ إعادة الإحياء...",
+        ["selling"]                        = "جارٍ البيع...",
+        ["turning_valve"]                  = "جارٍ تحويل الصمام...",
+        ["pickup_barrel"]                  = "جارٍ التقاط البرميل...",
+    },
+}
+
+Lang = Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})
