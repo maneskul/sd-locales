@@ -1,0 +1,75 @@
+local Translations = {
+    error = {
+        ["cannot_use_kit_here"] = "Você não pode usar este kit aqui..",
+        ["already_hacked"] = "Este Sistema já foi hackeado..",
+        ["still_active"] = "O Sistema de Segurança ainda está ativo..",
+        ["fully_lockdown"] = "O Sistema de Segurança entrou em bloqueio total..",
+        ["automatic_pressure_active"] = "Os reguladores automáticos de pressão estão ativos..",
+        ["automatic_pressure_active2"] = "A regulação automática de pressão ainda está ativa..",
+        ["pressure_too_low"] = "A pressão caiu demais e travou a plataforma..",
+        ["incorrect_pass"] = "Senha incorreta",
+        ["how_did_you_get"] = "Oops, como você chegou aqui?!",
+        ["not_enough_cops"] = "Policiais insuficientes..",
+        ["already_have_barrel"] = "Você já tem um barril..",
+        ["trying_to_exploit"] = "Tentando explorar, né?!",
+        ["pressure_too_high"] = "A pressão está muito alta! corra!!",
+        ["cannot_hack_right_now"] = "Você não pode hackear isso agora..",
+        ["pressure_not_right_yet"] = "A pressão ainda não está correta..",
+        ["no_pink_usb_dongle"] = "Você não tem um Dongle USB Rosa..",
+        ["cant_do_right_now"] = "Não é possível fazer isso agora..",
+        ["wrong_lever_sequence"] = "Você puxou as alavancas na sequência errada..",
+    },
+    success = {
+        ["out_to_sea"] = "Você viajou para longe mar afora..",
+        ["pressure_at"] = "Você precisa da pressão em torno de 55%",
+        ["pressure_at_2"] = "Uma vez que a pressão estiver correta, você precisa hackear certas áreas..",
+        ["automatic_pressure_deactive"] = "Reguladores de Pressão Automáticos Desativados..",
+        ["took_barrel"] = "Você pegou o barril cheio de óleo..",
+        ["pulled_lever"] = "Alavanca puxada",
+        ["current_pressure"] = "A leitura atual da pressão é:",
+        ["security_system_override"] = "Início da Superação do Sistema de Segurança..",
+        ["find_levers_to_deactivate_pressure"] = "Você precisa encontrar alavancas para desativar os reguladores de pressão..",
+    },
+    letters = {
+        ["hidden_letter"] = "A letra oculta é",
+        ["first_hidden_letter"] = "A primeira letra oculta é",
+        ["second_hidden_letter"] = "A segunda letra oculta é",
+        ["third_hidden_letter"] = "A terceira letra oculta é",
+        ["fourth_hidden_letter"] = "A quarta letra oculta é",
+    },
+    menu = {
+        ["input_password"] = "Digite a Senha de 4 Letras:",
+        ["submit_Text"] = "Enviar",
+        ["uppercase_only"] = "Apenas maiúsculas",
+        ["sell_barrel"] = "Venda o Barril para este Posto de Gasolina",
+        ["going_price"] = "Preço atual aqui:"
+    },
+    prints = {
+        ["cooldown_started"] = "PLATAFORMA DE PETRÓLEO: Início do tempo de espera",
+        ["cooldown_finished"] = "PLATAFORMA DE PETRÓLEO: Fim do tempo de espera",
+    },
+    target = {
+        ["grab_barrel"] = "Pegar Barril",
+        ["sell_barrel"] = "Vender Barril de Óleo",
+        ["pull_lever_1"] = "Puxar Alavanca #1",
+        ["pull_lever_2"] = "Puxar Alavanca #2",
+        ["pull_lever_3"] = "Puxar Alavanca #3",
+        ["insert_dongle"] = "Inserir Dongle USB",
+        ["increase_pressure"] = "Aumentar pressão",
+        ["lower_pressure"] = "Diminuir pressão",
+        ["check_pressure"] = "Verificar Pressão",
+        ["enter_password"] = "Digite a Senha",
+        ["loot_body"] = "Saquear",
+    },
+    progress = {
+        ["reviving"] = "Revivendo..",
+        ["selling"] = "Vendendo..",
+        ["turning_valve"] = "Girando válvula..",
+        ["pickup_barrel"] = "Pegando barril..",
+    },
+}
+
+Lang = Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})
